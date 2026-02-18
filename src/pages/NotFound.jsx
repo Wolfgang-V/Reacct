@@ -8,7 +8,7 @@ const NotFound = () => {
         i'm afraid you're lost
         </h1>
         
-        <button className='btn btn-dark' onClick={()=>navigate('/',{replace:true})}>Go Home</button>
+        <button className='btn btn-dark' onClick={()=>navigate('/',{replace:true})}>Take Me Home</button>
         
         </div>
   )

@@ -52,13 +52,16 @@ const Fetch = () => {
 
                 {
                     allusers.map((user, index) => {
-                        return <div key={user.id} className="card" style={{ width: "18rem" }}>
-                            <img src="..." className="card-img-top" alt="..." />
+                        return <div key={user.id} className="card" style={{ width: "18rem" }} >
+                            {/* {<img src="..." className="card-img-top" alt="..." />} */}
                             <div className="card-body">
-                                <h5 className="card-title">{user.name}</h5>
-                                <p className="card-text">{user.email}</p>
-                                <p className='card-text'>{user.username}</p>
-                                <p className='card-text'>{user.address.street + ' ' + user.address.suite + ' ' + user.address.city + ' '+ user.address.zipcode + ''+ user.address.geo.lat + ' ' + user.address.geo.lng}</p>
+                                <h5 className="card-title"> <strong>Name:</strong> {user.name}</h5>
+                                <p className="card-text"><strong>Email:</strong> {user.email}</p>
+                                <p className='card-text'><strong>Username:</strong> {user.username}</p>
+                                <p className='card-text'><strong>Phone:</strong> {user.phone}</p>
+                                <p className='card-text'><strong>Website:</strong> {user.website}</p>
+                                <p className='card-text'><strong>Company:</strong> {user.company.name}</p>
+                                <p className='card-text'><strong>Address:</strong> {user.address.street + ' ' + user.address.suite + ' ' + user.address.city + ' '+ user.address.zipcode + ''+ user.address.geo.lat + ' ' + user.address.geo.lng}</p>
 
 
                                 <a href="#" className="btn btn-warning">TOUCH mE</a>

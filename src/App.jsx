@@ -174,7 +174,9 @@ import Contacts from './pages/Contacts'
 import NotFound from './pages/NotFound'
 import Navbar from './components/Navbar'
 import Profile from './pages/Profile'
-import Fetch from './pages/Fetch' 
+import Fetch from './pages/Fetch'
+import Search from './pages/search' 
+import Formikk from './pages/Formikk'
 
 
 const App = () => {
@@ -186,6 +188,8 @@ const App = () => {
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/contacts" element={<Contacts/>} />
+        <Route path="/search" element={<Search/>} />
+        <Route path="/formikk" element={<Formikk/>} />
 
         {/*wildcard routing*/}
         <Route path="*" element={<NotFound/>} />
