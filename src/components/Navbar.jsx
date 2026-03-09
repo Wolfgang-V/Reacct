@@ -59,6 +59,12 @@ const Navbar = () => {
 						</li>
 
 						<li className="nav-item">
+							<NavLink to="/addproduct" className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}>
+								AddProducts
+							</NavLink>
+						</li>
+
+						<li className="nav-item">
 							<div className="d-flex ms-3">
 								<input
 									type="text"
